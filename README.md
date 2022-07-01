@@ -1,3 +1,14 @@
+# Public Holidays Integration with Salesforce
+
+This app demonstrates how the https://calendarific.com api can be used to access public holidays with salesforce and add as events to calendar.
+
+This app contains:
+
+- Two Lightning Components, holidayName and holidayUi
+- Apex class to make api calls - HolidaysIntegrationCalls. 
+- Wrapper Apex class to store holiday dates - HolidayWrapper.
+- Aura app that contains the LWC to access independently 
+
 # Salesforce DX Project: Next Steps
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.

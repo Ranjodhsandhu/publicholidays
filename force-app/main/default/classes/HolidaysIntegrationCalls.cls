@@ -1,4 +1,4 @@
-public without sharing class HolidaysIntegrationCalls {
+public with sharing class HolidaysIntegrationCalls {
     @AuraEnabled(cacheable=true)
     public static List<HolidayWrapper> holidaysEndpoint(String yearupdate, String countryupdate){
         
