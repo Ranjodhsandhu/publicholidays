@@ -1,0 +1,45 @@
+<template>
+    
+    <div class="slds-m-around_large">
+        <template if:true={result}>
+            <lightning-card title={heading} icon-name="custom:custom14">
+                <div class="holiday-action">
+                    <lightning-combobox
+                            name="country"
+                            label="Change Country"
+                            value={value}
+                            placeholder="Canada"
+                            options={countryoptions}
+                            onchange={handleCountryChange} class="country-combo combo">
+                    </lightning-combobox>
+                    <lightning-combobox
+                            name="year"
+                            label="Change Year"
+                            value={value}
+                            placeholder="2022"
+                            options={yearoptions}
+                            onchange={handleYearChange} class="year-combo combo">
+                    </lightning-combobox>
+                    <span>Total Holidays: {total}</span>
+                </div>
+                <div class="slds-grid slds-wrap">
+                    <template if:true={result}>
+                        <template for:each={result} for:item="holiday">
+                                <div class="slds-size_1-of-3" key={holiday.holidayId}>
+                                    <c-holiday-name 
+                                        holidaydate={holiday.holidayDate}
+                                        title={holiday.holidayName} 
+                                        holidaydescription={holiday.holidayDescription}
+                                    >
+                                    </c-holiday-name>
+                                </div>
+                        </template>
+                    </template>
+                </div>
+            </lightning-card>
+        </template> 
+        <template if:true={error}>
+            <p>Nothing to Display other than error</p>
+        </template> 
+    </div>
+</template>

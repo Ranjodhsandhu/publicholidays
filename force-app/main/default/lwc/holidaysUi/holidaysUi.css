@@ -1,0 +1,15 @@
+.combo{
+    margin:10px;
+    max-width: fit-content;
+}
+
+p{
+    display:inline;
+}
+.holiday-action{
+    display:flex;
+
+}
+.holiday-action>span{
+    margin-top:40px;
+}

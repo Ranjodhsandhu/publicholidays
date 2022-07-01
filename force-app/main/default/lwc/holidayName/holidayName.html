@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title={title} class="my-card slds-m-around_medium">
+        <template if:true={holidaydate}>
+            <p class="holiday-date slds-m-around-medium" >{holidaydate}</p>
+        </template>
+            <p class="holiday-description slds-m-around-medium">{holidaydescription}</p>
+            <lightning-button label="Save" value="Save" onclick={handleClick} class="save-button"></lightning-button>
+    </lightning-card>
+</template>

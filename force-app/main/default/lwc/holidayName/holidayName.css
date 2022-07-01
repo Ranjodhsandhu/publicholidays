@@ -1,0 +1,25 @@
+.my-card{
+    display:block;
+    border: 1px solid rgb(101, 153, 205);
+    margin: 2px;
+    min-height: 180px;
+}
+.my-card:hover lightning-button{
+    display:block;
+    visibility: visible;
+}
+.save-button{
+    display:block;
+    visibility: hidden;
+}
+.holiday-date{
+    color:cadetblue;
+}
+.holiday-description{
+    color:black;
+}
+p.holiday-date,p.holiday-description,.save-button{
+    margin-left:20px;
+    margin-right:10px;
+}
+
